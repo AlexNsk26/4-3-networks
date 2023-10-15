@@ -1,4 +1,4 @@
-FROM ngnx as build
+FROM nginx as build
 WORKDIR /ngnx
 COPY /nginx.conf /etc/nginx/conf.d/default.conf
 COPY /index.html /usr/share/ngnx/html
